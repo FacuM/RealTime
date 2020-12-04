@@ -27,7 +27,7 @@ function LogDebug(message)
   end
 end
 
-function TryUpdateTime()
+function TryUpdateTime(UPDATE_INTERVAL_MILI)
   if (TICK_COUNT >= ( SECOND_TICKS * (UPDATE_INTERVAL_MILI / 1000) ) ) then
     -- Get parsed time.
     unparsed_time = os.date("%H:%M:%S")
